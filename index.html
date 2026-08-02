@@ -1,548 +1,224 @@
 <!DOCTYPE html>
-
-<html class="scroll-smooth" lang="pt-br"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>SF2 Premium Studio | Timbres Profissionais</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Timbres Premium | O Som dos Teclados Mais Caros no seu Celular</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script>
         tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "on-secondary-fixed-variant": "#574500",
-                      "error": "#ba1a1a",
-                      "surface-container": "#eceef0",
-                      "on-primary-fixed": "#131b2e",
-                      "surface-variant": "#e0e3e5",
-                      "on-background": "#191c1e",
-                      "primary-fixed": "#dae2fd",
-                      "secondary-container": "#fed65b",
-                      "on-primary": "#ffffff",
-                      "inverse-surface": "#2d3133",
-                      "surface-container-low": "#f2f4f6",
-                      "surface": "#f7f9fb",
-                      "inverse-primary": "#bec6e0",
-                      "on-surface": "#191c1e",
-                      "surface-bright": "#f7f9fb",
-                      "on-tertiary-fixed-variant": "#38485d",
-                      "on-surface-variant": "#45464d",
-                      "secondary-fixed": "#ffe088",
-                      "surface-tint": "#565e74",
-                      "on-secondary-fixed": "#241a00",
-                      "tertiary-fixed": "#d3e4fe",
-                      "tertiary": "#000000",
-                      "secondary": "#735c00",
-                      "surface-dim": "#d8dadc",
-                      "surface-container-lowest": "#ffffff",
-                      "outline": "#76777d",
-                      "secondary-fixed-dim": "#e9c349",
-                      "background": "#f7f9fb",
-                      "on-error-container": "#93000a",
-                      "on-tertiary-container": "#75859d",
-                      "primary-fixed-dim": "#bec6e0",
-                      "surface-container-high": "#e6e8ea",
-                      "on-primary-container": "#7c839b",
-                      "on-primary-fixed-variant": "#3f465c",
-                      "tertiary-container": "#0b1c30",
-                      "on-tertiary": "#ffffff",
-                      "on-secondary-container": "#745c00",
-                      "inverse-on-surface": "#eff1f3",
-                      "surface-container-highest": "#e0e3e5",
-                      "primary-container": "#131b2e",
-                      "tertiary-fixed-dim": "#b7c8e1",
-                      "error-container": "#ffdad6",
-                      "on-secondary": "#ffffff",
-                      "outline-variant": "#c6c6cd",
-                      "primary": "#000000",
-                      "on-error": "#ffffff",
-                      "on-tertiary-fixed": "#0b1c30"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.25rem",
-                      "lg": "0.5rem",
-                      "xl": "0.75rem",
-                      "full": "9999px"
-              },
-              "spacing": {
-                      "sm": "12px",
-                      "lg": "48px",
-                      "xs": "4px",
-                      "base": "8px",
-                      "md": "24px",
-                      "gutter": "24px",
-                      "xl": "80px",
-                      "container-max": "1280px"
-              },
-              "fontFamily": {
-                      "headline-lg-mobile": ["Montserrat"],
-                      "label-sm": ["Inter"],
-                      "headline-lg": ["Montserrat"],
-                      "headline-md": ["Montserrat"],
-                      "body-md": ["Inter"],
-                      "body-lg": ["Inter"],
-                      "display-lg": ["Montserrat"]
-              },
-              "fontSize": {
-                      "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
-                      "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                      "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
-                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
-                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                      "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
-              }
-            },
-          },
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#EBB305',
+                            goldHover: '#C99803',
+                            dark: '#0A0A0A',
+                            surface: '#171717',
+                            surfaceBorder: '#262626'
+                        }
+                    }
+                }
+            }
         }
     </script>
-<style>
+    <style>
+        body {
+            background-color: #0A0A0A;
+            color: #FFFFFF;
+        }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .premium-card-shadow {
-            box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.05), 0 4px 6px -2px rgba(15, 23, 42, 0.02);
+        .accent-gradient {
+            background: linear-gradient(135deg, #EBB305 0%, #D49D00 100%);
         }
-        .product-stage {
-            background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+        .pulse-btn {
+            animation: pulse-gold 2s infinite;
         }
-        .hero-gradient {
-            background: linear-gradient(rgba(247, 249, 251, 0.9), rgba(247, 249, 251, 0.7)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4AneNm17-OBGVu0p8q6li_LAWMyy4atuK5VIch0GI47scvbqFkZR3RjMPmFf9DOotkCW3Vfg0ar-PRI9UP6fjtgJKm749QdXrv5t1E2PxJGMkFjUUiW-YXWHTlqhBSmH5k3H1Mg7XRCMh13liWdrhemRv0q13CMUBybu3zjTBWbVSM2j0gL53DnIaENCEDOPv7spyr0teb-HlWqjr3XeoiuCN7X0b1zB9NFpIKAjLN46W0CfD5J9X');
-            background-size: cover;
-            background-position: center;
-        }
-        .player-active {
-            border-left: 4px solid #735c00;
-            background: #F1F5F9;
+        @keyframes pulse-gold {
+            0% { box-shadow: 0 0 0 0 rgba(235, 179, 5, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(235, 179, 5, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(235, 179, 5, 0); }
         }
     </style>
 </head>
-<body class="bg-surface font-body-md text-on-surface">
-<!-- TopAppBar -->
-<header class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md fixed top-0 w-full z-[100] border-b border-surface-variant dark:border-outline-variant">
-<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-xl">
-<div class="flex items-center gap-base">
-<img alt="SF2 Premium Studio Logo" class="h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNWRZwsDmIFGz3RocfmTgGng66Rw2tz2EnaOYX8xa0-uz7Z55O9WJmZ-8ljhwQdl55FYgoKpu-F8LQpuR3jrApmDmrC8GpHwopyJuIM3U4MUhlIvPENz19LqAzevw2P-BBO8Uhf_lM1woQkqIiFWoHm-op5ZVlDWL2o_93sh-06bqxvy1h4Vqb4Yz813FUwdVd85y9MWfES0LZ1LBYlv0Zho2dJDwEy91ALIznZDo1RjqQoyZDOqSx"/>
-</div>
-<nav class="hidden md:flex items-center gap-lg">
-<a class="font-label-sm text-label-sm text-primary dark:text-primary-fixed border-b-2 border-secondary font-bold hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#inicio">Início</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#timbres">Timbres</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#demos">Demos</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#contato">Contato</a>
-</nav>
-<div class="flex items-center">
-<button class="bg-primary text-on-primary px-gutter py-3 rounded-full font-label-sm text-label-sm active:scale-95 duration-200 transition-all hover:bg-secondary">
-                    Comprar
-                </button>
-</div>
-</div>
-</header>
-<main class="pt-xl">
-<!-- Hero Section -->
-<section class="hero-gradient min-h-[80vh] flex items-center relative overflow-hidden" id="inicio">
-<div class="max-w-container-max mx-auto px-gutter grid md:grid-cols-2 gap-xl items-center w-full">
-<div class="space-y-md animate-fade-in">
-<h1 class="font-headline-lg text-headline-lg md:text-display-lg text-primary leading-tight">
-                        Timbres Premium SF2 para Audio Evolution
-                    </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
-                        Leve o som do seu teclado para outro nível com SoundFonts profissionais, leves, realistas e prontos para tocar.
-                    </p>
-<div class="flex flex-wrap gap-md pt-sm">
-<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-headline-md text-body-md premium-card-shadow hover:bg-secondary transition-all active:scale-95">
-                            Comprar Agora
-                        </button>
-<button class="border-2 border-primary text-primary px-8 py-4 rounded-xl font-headline-md text-body-md hover:bg-primary hover:text-on-primary transition-all active:scale-95">
-                            Ouvir Demonstração
-                        </button>
-</div>
-</div>
-<div class="hidden md:block relative">
-<div class="absolute -top-12 -right-12 w-64 h-64 bg-secondary-fixed/30 rounded-full blur-3xl"></div>
-<img class="relative z-10 w-full rounded-2xl shadow-2xl" data-alt="A professional MIDI keyboard controller connected via OTG cable to a high-end Android tablet running the Audio Evolution DAW interface. The lighting is soft and cinematic, highlighting the metallic textures of the keyboard and the sleek glass surface of the tablet, evoking a high-end home studio atmosphere with a minimalist, premium feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7G40Wdp7XLC626a6MXswjGy3uNUxcClB2ID2X4l_6L2_t4aSIacdHaBV6WRjs61Xxsx7-R_3sSWDY3eWxXzxVi-dTR9cT4f_PJ8R3X0t585vUFnHrMS-7bh3YcvncgVLxiwFhCLHWCdGgzYdVfKeTJ-dMiRYhoHLStaz81IRQMvRhzyVlPv_HUHdvXeJxt8NEd7EMoo3P3ZI1s_6cZsNA1H3smC42Oe-OWefXdXwdwn1wWBGYTCKX"/>
-</div>
-</div>
-</section>
-<!-- Benefits Section -->
-<section class="py-xl bg-white">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="text-center mb-xl">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-base">Excelência em cada detalhe</h2>
-<div class="w-20 h-1 bg-secondary mx-auto rounded-full"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
-<!-- Benefit 1 -->
-<div class="p-lg bg-surface border border-outline-variant rounded-xl premium-card-shadow hover:-translate-y-2 transition-all duration-300">
-<span class="material-symbols-outlined text-secondary text-5xl mb-md">surround_sound</span>
-<h3 class="font-headline-md text-headline-md mb-sm">Áudio Realista</h3>
-<p class="text-on-surface-variant">Samples gravados em alta fidelidade com camadas de velocity para máxima expressividade.</p>
-</div>
-<!-- Benefit 2 -->
-<div class="p-lg bg-surface border border-outline-variant rounded-xl premium-card-shadow hover:-translate-y-2 transition-all duration-300">
-<span class="material-symbols-outlined text-secondary text-5xl mb-md">memory</span>
-<h3 class="font-headline-md text-headline-md mb-sm">Baixo Consumo</h3>
-<p class="text-on-surface-variant">Arquivos otimizados para carregar instantaneamente sem comprometer o desempenho do seu Android.</p>
-</div>
-<!-- Benefit 3 -->
-<div class="p-lg bg-surface border border-outline-variant rounded-xl premium-card-shadow hover:-translate-y-2 transition-all duration-300">
-<span class="material-symbols-outlined text-secondary text-5xl mb-md">vital_signs</span>
-<h3 class="font-headline-md text-headline-md mb-sm">Resposta Dinâmica</h3>
-<p class="text-on-surface-variant">Algoritmos de articulação que reagem ao seu toque, simulando instrumentos acústicos reais.</p>
-</div>
-<!-- Benefit 4 -->
-<div class="p-lg bg-surface border border-outline-variant rounded-xl premium-card-shadow hover:-translate-y-2 transition-all duration-300">
-<span class="material-symbols-outlined text-secondary text-5xl mb-md">piano</span>
-<h3 class="font-headline-md text-headline-md mb-sm">Totalmente MIDI</h3>
-<p class="text-on-surface-variant">Compatível com qualquer teclado controlador via USB/OTG ou Bluetooth MIDI.</p>
-</div>
-<!-- Benefit 5 -->
-<div class="p-lg bg-surface border border-outline-variant rounded-xl premium-card-shadow hover:-translate-y-2 transition-all duration-300">
-<span class="material-symbols-outlined text-secondary text-5xl mb-md">install_mobile</span>
-<h3 class="font-headline-md text-headline-md mb-sm">Instalação Simples</h3>
-<p class="text-on-surface-variant">Processo guiado passo a passo para configurar seus timbres no Audio Evolution em minutos.</p>
-</div>
-<!-- Benefit 6 -->
-<div class="p-lg bg-surface border border-outline-variant rounded-xl premium-card-shadow hover:-translate-y-2 transition-all duration-300">
-<span class="material-symbols-outlined text-secondary text-5xl mb-md">update</span>
-<h3 class="font-headline-md text-headline-md mb-sm">Atualizações</h3>
-<p class="text-on-surface-variant">Acesso vitalício a novos patches e melhorias nos instrumentos sem custo adicional.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Compatibility Section -->
-<section class="py-xl bg-primary-container text-on-primary-container overflow-hidden">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="flex flex-col md:flex-row items-center gap-xl">
-<div class="md:w-1/2 space-y-md">
-<h2 class="font-headline-lg text-headline-lg text-white">Compatibilidade Universal</h2>
-<p class="font-body-lg text-body-lg opacity-80">
-                            Nossos timbres são desenvolvidos no padrão da indústria <strong>.SF2 (SoundFont 2)</strong>, garantindo flexibilidade total para sua produção musical móvel.
-                        </p>
-<div class="grid grid-cols-2 gap-md pt-base">
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
-<span>Audio Evolution Mobile</span>
-</div>
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
-<span>Qualquer Teclado MIDI</span>
-</div>
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
-<span>Android 8.0+</span>
-</div>
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
-<span>Adaptadores OTG</span>
-</div>
-</div>
-</div>
-<div class="md:w-1/2 flex flex-wrap justify-center gap-lg opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-<span class="material-symbols-outlined text-6xl">android</span>
-<span class="material-symbols-outlined text-6xl">keyboard</span>
-<span class="material-symbols-outlined text-6xl">settings_input_hdmi</span>
-<span class="material-symbols-outlined text-6xl">album</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Instruments Grid -->
-<section class="py-xl" id="timbres">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="flex justify-between items-end mb-xl border-b border-outline-variant pb-md">
-<div>
-<h2 class="font-headline-lg text-headline-lg text-primary">Nossa Biblioteca</h2>
-<p class="text-on-surface-variant">Explore timbres meticulosamente sampleados.</p>
-</div>
-<div class="hidden md:flex gap-sm">
-<span class="px-4 py-2 bg-secondary text-on-secondary rounded-full font-label-sm text-label-sm cursor-pointer">Todos</span>
-<span class="px-4 py-2 border border-outline-variant rounded-full font-label-sm text-label-sm hover:bg-surface-variant cursor-pointer transition-all">Pianos</span>
-<span class="px-4 py-2 border border-outline-variant rounded-full font-label-sm text-label-sm hover:bg-surface-variant cursor-pointer transition-all">Orquestral</span>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-md">
-<!-- Instrument Card 1 -->
-<div class="group bg-white rounded-xl overflow-hidden border border-outline-variant premium-card-shadow transition-all hover:-translate-y-1">
-<div class="product-stage h-48 flex items-center justify-center">
-<span class="material-symbols-outlined text-7xl text-primary opacity-40 group-hover:scale-110 transition-transform duration-500">piano</span>
-</div>
-<div class="p-md space-y-sm">
-<div class="flex justify-between items-start">
-<h3 class="font-headline-md text-headline-md">Grand Piano</h3>
-<span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] uppercase font-bold px-2 py-1 rounded">Premium</span>
-</div>
-<p class="text-body-md text-on-surface-variant line-clamp-2">Timbre de piano de cauda com 12 camadas de velocity e ressonância natural.</p>
-<div class="flex items-center gap-xs text-[12px] font-bold text-on-surface-variant/60">
-<span class="material-symbols-outlined text-sm">description</span> Formato SF2
-                            </div>
-<button class="w-full mt-base py-3 border border-primary text-primary font-label-sm text-label-sm rounded-lg hover:bg-primary hover:text-on-primary transition-all">Ver Detalhes</button>
-</div>
-</div>
-<!-- Instrument Card 2 -->
-<div class="group bg-white rounded-xl overflow-hidden border border-outline-variant premium-card-shadow transition-all hover:-translate-y-1">
-<div class="product-stage h-48 flex items-center justify-center">
-<span class="material-symbols-outlined text-7xl text-primary opacity-40 group-hover:scale-110 transition-transform duration-500">fitbit_jumping_jacks</span>
-</div>
-<div class="p-md space-y-sm">
-<div class="flex justify-between items-start">
-<h3 class="font-headline-md text-headline-md">Cinematic Strings</h3>
-<span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] uppercase font-bold px-2 py-1 rounded">Premium</span>
-</div>
-<p class="text-body-md text-on-surface-variant line-clamp-2">Sessão completa de cordas com legato fluido e ataques expressivos.</p>
-<div class="flex items-center gap-xs text-[12px] font-bold text-on-surface-variant/60">
-<span class="material-symbols-outlined text-sm">description</span> Formato SF2
-                            </div>
-<button class="w-full mt-base py-3 border border-primary text-primary font-label-sm text-label-sm rounded-lg hover:bg-primary hover:text-on-primary transition-all">Ver Detalhes</button>
-</div>
-</div>
-<!-- Instrument Card 3 -->
-<div class="group bg-white rounded-xl overflow-hidden border border-outline-variant premium-card-shadow transition-all hover:-translate-y-1">
-<div class="product-stage h-48 flex items-center justify-center">
-<span class="material-symbols-outlined text-7xl text-primary opacity-40 group-hover:scale-110 transition-transform duration-500">settings_input_component</span>
-</div>
-<div class="p-md space-y-sm">
-<div class="flex justify-between items-start">
-<h3 class="font-headline-md text-headline-md">Analog Pads</h3>
-<span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] uppercase font-bold px-2 py-1 rounded">Premium</span>
-</div>
-<p class="text-body-md text-on-surface-variant line-clamp-2">Pads quentes inspirados em sintetizadores vintage dos anos 80.</p>
-<div class="flex items-center gap-xs text-[12px] font-bold text-on-surface-variant/60">
-<span class="material-symbols-outlined text-sm">description</span> Formato SF2
-                            </div>
-<button class="w-full mt-base py-3 border border-primary text-primary font-label-sm text-label-sm rounded-lg hover:bg-primary hover:text-on-primary transition-all">Ver Detalhes</button>
-</div>
-</div>
-<!-- Instrument Card 4 -->
-<div class="group bg-white rounded-xl overflow-hidden border border-outline-variant premium-card-shadow transition-all hover:-translate-y-1">
-<div class="product-stage h-48 flex items-center justify-center">
-<span class="material-symbols-outlined text-7xl text-primary opacity-40 group-hover:scale-110 transition-transform duration-500">graphic_eq</span>
-</div>
-<div class="p-md space-y-sm">
-<div class="flex justify-between items-start">
-<h3 class="font-headline-md text-headline-md">Hammond B3</h3>
-<span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] uppercase font-bold px-2 py-1 rounded">Premium</span>
-</div>
-<p class="text-body-md text-on-surface-variant line-clamp-2">O clássico som do órgão de igreja e rock com efeito rotary simulado.</p>
-<div class="flex items-center gap-xs text-[12px] font-bold text-on-surface-variant/60">
-<span class="material-symbols-outlined text-sm">description</span> Formato SF2
-                            </div>
-<button class="w-full mt-base py-3 border border-primary text-primary font-label-sm text-label-sm rounded-lg hover:bg-primary hover:text-on-primary transition-all">Ver Detalhes</button>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Demo Player Section -->
-<section class="py-xl bg-surface" id="demos">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="bg-primary-container rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row min-h-[500px]">
-<!-- Sidebar List -->
-<div class="md:w-1/3 bg-tertiary-container p-lg border-r border-white/5">
-<h3 class="text-white font-headline-md text-headline-md mb-lg">Amostras de Áudio</h3>
-<div class="space-y-base" id="player-list">
-<div class="player-active p-md rounded-lg flex items-center justify-between cursor-pointer group hover:bg-white/5 transition-all">
-<div class="flex items-center gap-md">
-<span class="material-symbols-outlined text-secondary-fixed">play_circle</span>
-<div>
-<p class="text-white font-bold">Acoustic Piano</p>
-<p class="text-white/40 text-xs">Premium SF2 Pack</p>
-</div>
-</div>
-<span class="text-white/20 text-xs">1:45</span>
-</div>
-<div class="p-md rounded-lg flex items-center justify-between cursor-pointer group hover:bg-white/5 transition-all">
-<div class="flex items-center gap-md">
-<span class="material-symbols-outlined text-white/40 group-hover:text-white">play_circle</span>
-<div>
-<p class="text-white font-bold">Worship Pad</p>
-<p class="text-white/40 text-xs">Premium SF2 Pack</p>
-</div>
-</div>
-<span class="text-white/20 text-xs">2:10</span>
-</div>
-<div class="p-md rounded-lg flex items-center justify-between cursor-pointer group hover:bg-white/5 transition-all">
-<div class="flex items-center gap-md">
-<span class="material-symbols-outlined text-white/40 group-hover:text-white">play_circle</span>
-<div>
-<p class="text-white font-bold">Electric Bass</p>
-<p class="text-white/40 text-xs">Premium SF2 Pack</p>
-</div>
-</div>
-<span class="text-white/20 text-xs">0:58</span>
-</div>
-</div>
-</div>
-<!-- Main Player Content -->
-<div class="md:w-2/3 p-xl flex flex-col justify-center items-center text-center space-y-lg relative">
+<body class="antialiased font-sans flex flex-col min-h-screen">
 
-<div class="w-48 h-48 bg-white/10 rounded-2xl flex items-center justify-center relative z-10 border border-white/20">
-<span class="material-symbols-outlined text-8xl text-secondary-fixed">music_note</span>
-</div>
-<div class="relative z-10">
-<h4 class="text-white font-headline-lg text-headline-lg mb-xs">Acoustic Piano</h4>
-<p class="text-on-primary-container text-body-lg">Demonstração de dinâmica e sustain</p>
-</div>
-<!-- Player Controls -->
-<div class="w-full max-w-md relative z-10 space-y-md">
-<div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-<div class="h-full bg-secondary-fixed w-1/3 shadow-[0_0_15px_rgba(254,214,91,0.5)]"></div>
-</div>
-<div class="flex items-center justify-center gap-xl">
-<button class="text-white/60 hover:text-white"><span class="material-symbols-outlined text-3xl">skip_previous</span></button>
-<button class="w-16 h-16 bg-secondary-fixed text-on-secondary-fixed rounded-full flex items-center justify-center hover:scale-105 active:scale-95 transition-all">
-<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-</button>
-<button class="text-white/60 hover:text-white"><span class="material-symbols-outlined text-3xl">skip_next</span></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Testimonials -->
-<section class="py-xl bg-white">
-<div class="max-w-container-max mx-auto px-gutter">
-<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-xl">O que dizem os músicos</h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
-<!-- Testimonial 1 -->
-<div class="p-lg bg-surface rounded-2xl border border-outline-variant">
-<div class="flex text-secondary-fixed mb-md">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-md text-on-surface-variant italic mb-lg">"Impressionante a qualidade do Grand Piano. Uso profissionalmente em apresentações ao vivo com o Audio Evolution e nunca tive travamentos."</p>
-<div class="flex items-center gap-md">
-<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-white font-bold">RM</div>
-<div>
-<p class="font-bold">Ricardo Mendonça</p>
-<p class="text-xs opacity-60">Tecladista Profissional</p>
-</div>
-</div>
-</div>
-<!-- Testimonial 2 -->
-<div class="p-lg bg-surface rounded-2xl border border-outline-variant">
-<div class="flex text-secondary-fixed mb-md">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-md text-on-surface-variant italic mb-lg">"Os pads são quentes e preenchem muito bem o som. A instalação foi extremamente rápida, recomendo a todos!"</p>
-<div class="flex items-center gap-md">
-<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-white font-bold">JS</div>
-<div>
-<p class="font-bold">Juliana Silva</p>
-<p class="text-xs opacity-60">Produtora Musical</p>
-</div>
-</div>
-</div>
-<!-- Testimonial 3 -->
-<div class="p-lg bg-surface rounded-2xl border border-outline-variant">
-<div class="flex text-secondary-fixed mb-md">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-md text-on-surface-variant italic mb-lg">"Timbres muito leves. Rodam liso no meu tablet antigo. O suporte técnico também é nota 10."</p>
-<div class="flex items-center gap-md">
-<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-white font-bold">AL</div>
-<div>
-<p class="font-bold">André Lucas</p>
-<p class="text-xs opacity-60">Músico Gospel</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Final CTA Banner -->
-<section class="py-xl">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="relative bg-primary-container rounded-3xl p-xl overflow-hidden text-center space-y-md">
+    <!-- Header Minimalista -->
+    <header class="w-full py-6 px-6 md:px-12 flex justify-center md:justify-start border-b border-brand-surfaceBorder">
+        <div class="font-black text-2xl tracking-tighter text-white">
+            SF2<span class="text-brand-gold">.</span>STUDIO
+        </div>
+    </header>
 
-<h2 class="font-headline-lg text-headline-lg md:text-display-lg text-white relative z-10">Transforme seu Android em um teclado profissional</h2>
-<p class="text-white/70 text-body-lg max-w-2xl mx-auto relative z-10">Adquira agora o pacote completo de timbres SF2 e tenha sons de altíssima qualidade na palma da sua mão.</p>
-<div class="pt-lg relative z-10">
-<button class="bg-secondary-fixed text-on-secondary-fixed px-12 py-5 rounded-full font-headline-md text-headline-md hover:bg-secondary-container transition-all shadow-[0_20px_50px_rgba(254,214,91,0.3)] active:scale-95">
-                            Comprar Timbres Premium
-                        </button>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-primary-container dark:bg-tertiary-container py-xl text-on-primary-container">
-<div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-md">
-<div class="flex flex-col items-center md:items-start gap-sm">
-<img alt="Logo" class="h-10 brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNWRZwsDmIFGz3RocfmTgGng66Rw2tz2EnaOYX8xa0-uz7Z55O9WJmZ-8ljhwQdl55FYgoKpu-F8LQpuR3jrApmDmrC8GpHwopyJuIM3U4MUhlIvPENz19LqAzevw2P-BBO8Uhf_lM1woQkqIiFWoHm-op5ZVlDWL2o_93sh-06bqxvy1h4Vqb4Yz813FUwdVd85y9MWfES0LZ1LBYlv0Zho2dJDwEy91ALIznZDo1RjqQoyZDOqSx"/>
-<p class="font-label-sm text-label-sm opacity-60">© 2024 SF2 Premium Studio. Todos os direitos reservados.</p>
-</div>
-<nav class="flex flex-wrap justify-center gap-lg">
-<a class="font-label-sm text-label-sm text-on-primary-container/80 hover:text-secondary-fixed transition-colors" href="#">Início</a>
-<a class="font-label-sm text-label-sm text-on-primary-container/80 hover:text-secondary-fixed transition-colors" href="#">Timbres</a>
-<a class="font-label-sm text-label-sm text-on-primary-container/80 hover:text-secondary-fixed transition-colors" href="#">Termos de Uso</a>
-<a class="font-label-sm text-label-sm text-on-primary-container/80 hover:text-secondary-fixed transition-colors" href="#">Privacidade</a>
-<a class="font-label-sm text-label-sm text-on-primary-container/80 hover:text-secondary-fixed transition-colors" href="#">Contato</a>
-</nav>
-<div class="flex gap-md">
-<span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed">qr_code_2</span>
-<span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed">video_library</span>
-<span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed">alternate_email</span>
-</div>
-</div>
-</footer>
-<!-- BottomNavBar Mobile -->
-<div class="fixed bottom-0 left-0 w-full flex md:hidden justify-around items-center py-base px-sm bg-primary-container dark:bg-tertiary-container shadow-[0_-4px_10px_rgba(0,0,0,0.1)] z-50">
-<a class="flex flex-col items-center justify-center text-secondary-fixed font-bold" href="#inicio">
-<span class="material-symbols-outlined">home</span>
-<span class="font-label-sm text-label-sm">Início</span>
-</a>
-<a class="flex flex-col items-center justify-center text-on-primary-container/60" href="#timbres">
-<span class="material-symbols-outlined">library_music</span>
-<span class="font-label-sm text-label-sm">Timbres</span>
-</a>
-<a class="flex flex-col items-center justify-center text-on-primary-container/60" href="#demos">
-<span class="material-symbols-outlined">graphic_eq</span>
-<span class="font-label-sm text-label-sm">Demos</span>
-</a>
-<a class="flex flex-col items-center justify-center text-on-primary-container/60" href="#">
-<span class="material-symbols-outlined">play_circle</span>
-<span class="font-label-sm text-label-sm">Player</span>
-</a>
-</div>
-<script>
-        // Simple player interactivity
-        const playerItems = document.querySelectorAll('#player-list > div');
-        playerItems.forEach(item => {
-            item.addEventListener('click', () => {
-                playerItems.forEach(i => i.classList.remove('player-active', 'bg-white/5'));
-                playerItems.forEach(i => i.querySelector('span').classList.replace('text-secondary-fixed', 'text-white/40'));
-                
-                item.classList.add('player-active');
-                item.querySelector('span').classList.replace('text-white/40', 'text-secondary-fixed');
-            });
-        });
+    <!-- Hero Section -->
+    <section class="flex flex-col items-center text-center px-6 pt-20 pb-24 md:pt-32 md:pb-32 max-w-5xl mx-auto">
+        <div class="inline-block px-4 py-1.5 rounded-full border border-brand-surfaceBorder bg-brand-surface text-sm font-semibold text-gray-300 mb-6 uppercase tracking-wider">
+            Para Audio Evolution e Teclados MIDI
+        </div>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight mb-6">
+            O Som dos Teclados Mais Caros do Mundo, <span class="text-brand-gold">no seu Celular.</span>
+        </h1>
+        <p class="text-lg md:text-2xl text-gray-400 mb-10 max-w-3xl leading-relaxed">
+            Transforme seu aparelho Android em um verdadeiro instrumento profissional usando timbres otimizados e realistas. Sem precisar gastar milhares de reais em um equipamento novo.
+        </p>
+        
+        <a href="#oferta" class="pulse-btn accent-gradient text-brand-dark font-bold text-lg md:text-xl px-10 py-5 rounded-lg hover:scale-105 transition-transform duration-300 flex items-center gap-3">
+            QUERO MEU PACOTE DE TIMBRES AGORA
+            <span class="material-symbols-outlined font-bold">arrow_forward</span>
+        </a>
+        <p class="mt-4 text-sm text-gray-500 flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">lock</span>
+            Compra 100% segura e acesso imediato
+        </p>
+    </section>
 
-        // Sticky Header behavior
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('shadow-md');
-            } else {
-                header.classList.remove('shadow-md');
-            }
-        });
-    </script>
-</body></html>
+    <!-- Problema e Solução -->
+    <section class="bg-brand-surface py-20 px-6 border-y border-brand-surfaceBorder">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Cansado de timbres artificiais que não dão peso à sua música?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="bg-brand-dark p-8 rounded-2xl border border-brand-surfaceBorder">
+                    <span class="material-symbols-outlined text-brand-gold text-4xl mb-4">cancel</span>
+                    <h3 class="text-xl font-bold mb-3">O Problema</h3>
+                    <p class="text-gray-400">Tocar com timbres de "plástico" que parecem brinquedo e tiram todo o brilho e profissionalismo da sua apresentação ou gravação.</p>
+                </div>
+                <div class="bg-brand-dark p-8 rounded-2xl border border-brand-surfaceBorder">
+                    <span class="material-symbols-outlined text-brand-gold text-4xl mb-4">memory</span>
+                    <h3 class="text-xl font-bold mb-3">A Barreira</h3>
+                    <p class="text-gray-400">Bibliotecas gigantescas de computador que exigem notebooks caros e travam qualquer celular ou tablet comum.</p>
+                </div>
+                <div class="bg-brand-dark p-8 rounded-2xl border border-brand-gold border-opacity-50 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brand-gold text-brand-dark text-xs font-bold px-3 py-1 rounded-bl-lg">A SOLUÇÃO</div>
+                    <span class="material-symbols-outlined text-brand-gold text-4xl mb-4">task_alt</span>
+                    <h3 class="text-xl font-bold mb-3">O Pacote Premium</h3>
+                    <p class="text-gray-400">Samples .SF2 otimizados, ultraleves e com fidelidade máxima. Você liga seu controlador no Android e tem som de Nord e Yamaha instantaneamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que você vai receber -->
+    <section class="py-24 px-6 max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">O Que Está Incluso no Pacote?</h2>
+        <p class="text-gray-400 text-lg mb-16 max-w-2xl mx-auto">Uma biblioteca cuidadosamente selecionada para cobrir 100% das suas necessidades ao vivo ou em estúdio.</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+            <div class="bg-brand-surface border border-brand-surfaceBorder p-6 rounded-xl hover:border-brand-gold transition-colors">
+                <h3 class="text-xl font-bold text-brand-gold mb-2">Pianos de Cauda</h3>
+                <p class="text-gray-400 text-sm">Camadas de velocity realistas e ressonância encorpada para Worship e Baladas.</p>
+            </div>
+            <div class="bg-brand-surface border border-brand-surfaceBorder p-6 rounded-xl hover:border-brand-gold transition-colors">
+                <h3 class="text-xl font-bold text-brand-gold mb-2">Pads Atmosféricos</h3>
+                <p class="text-gray-400 text-sm">Texturas quentes para preencher o fundo da sua banda sem embolar o som.</p>
+            </div>
+            <div class="bg-brand-surface border border-brand-surfaceBorder p-6 rounded-xl hover:border-brand-gold transition-colors">
+                <h3 class="text-xl font-bold text-brand-gold mb-2">Cordas & Synths</h3>
+                <p class="text-gray-400 text-sm">Arranjos orquestrais dinâmicos e sintetizadores clássicos para versatilidade total.</p>
+            </div>
+            <div class="bg-brand-surface border border-brand-surfaceBorder p-6 rounded-xl hover:border-brand-gold transition-colors">
+                <h3 class="text-xl font-bold text-brand-gold mb-2">Órgãos & EP</h3>
+                <p class="text-gray-400 text-sm">Hammonds vibrantes e Pianos Elétricos (Rhodes/Wurli) com ataque autêntico.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prova Social -->
+    <section class="bg-brand-surface py-20 px-6 border-y border-brand-surfaceBorder">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">O que os músicos estão dizendo</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Depoimento 1 -->
+                <div class="bg-brand-dark p-6 rounded-xl border border-brand-surfaceBorder">
+                    <div class="flex text-brand-gold mb-4">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">"Salvou minhas gigs! Uso um controlador barato ligado no meu tablet antigo e o som sai perfeito no PA da igreja. O Grand Piano é absurdo."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-surfaceBorder rounded-full flex items-center justify-center font-bold text-gray-400">R</div>
+                        <div>
+                            <p class="font-bold text-sm">Ricardo M.</p>
+                            <p class="text-xs text-gray-500">Tecladista</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Depoimento 2 -->
+                <div class="bg-brand-dark p-6 rounded-xl border border-brand-surfaceBorder">
+                    <div class="flex text-brand-gold mb-4">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">"A instalação no Audio Evolution foi em 2 minutos. Os pads não travam o meu celular. Valeu cada centavo, recomendo muito."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-surfaceBorder rounded-full flex items-center justify-center font-bold text-gray-400">J</div>
+                        <div>
+                            <p class="font-bold text-sm">Juliana S.</p>
+                            <p class="text-xs text-gray-500">Produtora</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Depoimento 3 -->
+                <div class="bg-brand-dark p-6 rounded-xl border border-brand-surfaceBorder">
+                    <div class="flex text-brand-gold mb-4">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">"Sempre tive dificuldade de achar timbres SF2 com qualidade realista. Essa biblioteca resolveu meu problema de vez."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-surfaceBorder rounded-full flex items-center justify-center font-bold text-gray-400">A</div>
+                        <div>
+                            <p class="font-bold text-sm">André L.</p>
+                            <p class="text-xs text-gray-500">Músico</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta / CTA Final -->
+    <section id="oferta" class="py-24 px-6 text-center max-w-4xl mx-auto flex-grow flex flex-col justify-center">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Não deixe sua música soar amadora.</h2>
+        <p class="text-gray-400 text-lg md:text-xl mb-12">
+            O pacote completo com todos os timbres premium está disponível com acesso vitalício e download imediato.
+        </p>
+        
+        <div class="bg-brand-surface border border-brand-gold border-opacity-30 p-8 md:p-12 rounded-3xl mx-auto shadow-[0_0_50px_rgba(235,179,5,0.1)]">
+            <h3 class="text-2xl font-bold mb-8">Acesso Completo + Atualizações</h3>
+            
+            <a href="#" class="pulse-btn accent-gradient text-brand-dark font-black text-xl md:text-2xl px-8 py-6 w-full rounded-xl hover:scale-[1.02] transition-transform duration-300 flex justify-center items-center gap-3 mb-4">
+                GARANTIR MEUS TIMBRES AGORA
+            </a>
+            
+            <div class="flex items-center justify-center gap-4 text-gray-400 text-sm mt-6 flex-wrap">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">verified_user</span> Compra Segura</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">download</span> Download Imediato</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">all_inclusive</span> Acesso Vitalício</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-brand-surfaceBorder py-8 text-center text-gray-600 text-sm mt-auto">
+        <p>© 2024 SF2 Studio. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
